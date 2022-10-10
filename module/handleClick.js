@@ -1,6 +1,6 @@
-import fetchJokes from "./fetchData.js";
-import { jokeContainer } from "./elements.js";
-import preLoader from "./preloader.js";
+import fetchJokes from "../module/fetchData.js";
+import { jokeContainer } from "../module/elements.js";
+import preLoader from "../module/preloader.js";
 
 export default async function handleClick() {
     const url = "https://icanhazdadjoke.com/";
