@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  margin: 5% 10% ;
+  flex-direction: column;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  appearance: button;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: goldenrod;
+  box-shadow: 0 0 10px rgb(247, 195, 63);
+  border: none;
+}
+
+button:focus, button:focus-within {
+    outline-offset: 1px;
+    outline: 2px solid goldenrod;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  min-height: 150px;
+  text-align: center;
+}
+.preloader {
+  align-self: center;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  border-radius: 50%;
+  border-top: 3px solid goldenrod;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
